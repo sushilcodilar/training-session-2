@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Mageplaza_HelloWorld::news_information" title="New Information" module="Mageplaza_HelloWorld" sortOrder="90" resource="Mageplaza_HelloWorld::news_information"/>
+        
+        <add id="Mageplaza_HelloWorld::allnews" title="All News" module="Mageplaza_HelloWorld" sortOrder="10" action="hello/news" resource="Mageplaza_HelloWorld::allnews" parent="Mageplaza_HelloWorld::news_information"/>
+
+        <add id="Mageplaza_HelloWorld::news_setting" title="settings" module="Mageplaza_HelloWorld" sortOrder="99" parent="Mageplaza_HelloWorld::news_information"  resource="Mageplaza_HelloWorld::news_setting"/>
+
+         <add id="Mageplaza_HelloWorld::news_configuration" title="Configuration" module="Mageplaza_HelloWorld" sortOrder="99" parent="Mageplaza_HelloWorld::news_setting" action="adminhtml/system_config/edit/section/helloworld" resource="Mageplaza_HelloWorld::news_configuration"/>
+    </menu>
+</config>
